@@ -56,7 +56,7 @@ public class mainWindow extends JPanel {
 		
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				JFrame frame = new JFrame("SideStep V1.01");
+				JFrame frame = new JFrame("SideStep V0.89");
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				frame.setContentPane(new mainWindow());
 				frame.pack();
@@ -436,7 +436,7 @@ public class mainWindow extends JPanel {
 		World.bg[2] += (World.Biomes.get(World.currentBiome).bg.getBlue() - World.bg[2])/32;
 		
 		g.setColor(new Color(World.bg[0], World.bg[1], World.bg[2]));
-		g.fillRect(0, 0, boxWidth + 10, boxHeight);
+		g.fillRect(0, 0, boxWidth + 10, boxHeight + 50);
 		
 		/**for(int s=1;s<=5;s++){
 			g.setColor(new Color(World.Suns.get(0).sunC.getRed()/255,World.Suns.get(0).sunC.getGreen()/255,World.Suns.get(0).sunC.getBlue()/255,(float)s/5));
